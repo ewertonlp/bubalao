@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubalão - Faça o Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="../assets/css/signup.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <img src="./img/loader.gif" alt="" class="loader" />
+
+    <div class="alert-box">
+      <img src="./img/error.png" alt="" class="alert-img" />
+      <p class="alert-msg">Error message</p>
+    </div>
+
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid"></nav>
+    </header>
+
+    <div class="container">
+      <img src="../assets/img/logo.png" alt="" class="logo" />
+      <h3 class="section-title">Login</h3>
+
+      <div class="login__form">
+        <input type="email" autocomplete="off" id="email" placeholder="email" />
+        <input
+          type="password"
+          autocomplete="off"
+          id="password"
+          placeholder="Senha"
+        />
+
+        <a href="./signup.html" class="link">Esqueceu a senha?</a>
+
+        <button class="button">Entrar</button>
+      </div>
+      <a href="./signup.html" class="link">Clique aqui para criar uma conta.</a>
+    </div>
+
+    <!--FOOTER    -->
+    <footer class="footer section"></footer>
+
+    <script src="../assets/js/token.js"></script>
+    <script src="../assets/js/form.js"></script>
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/footer.js"></script>
+  </body>
+</html>

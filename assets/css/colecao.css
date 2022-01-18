@@ -1,0 +1,30 @@
+.collection {
+  margin-top: 5rem;
+}
+
+.collection__card {
+  cursor: pointer;
+}
+
+.new__sneaker-card {
+  height: 250px;
+  padding: 2rem 1rem;
+}
+
+.new__sneaker-overlay {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 1rem;
+  background-color: rgba(138, 138, 138, 0.3);
+  transition: 0.3s;
+}
+
+.new__sneaker-card:hover .new__sneaker-overlay {
+  bottom: 0;
+}

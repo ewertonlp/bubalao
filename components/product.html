@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product -</title>
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/product.css" />
+  </head>
+  <body>
+    <nav class="nav bd-grid"></nav>
+
+    <!-- PRODUCT -->
+    <section class="product__container">
+      <div class="image__slider">
+        <div class="product__images">
+          <img
+            src="../assets/img/product/28326_000101.jpg"
+            alt=""
+            class="product__img active"
+          />
+          <img
+            src="../assets/img/28326_000101_1.jpg"
+            alt=""
+            class="product__img"
+          />
+          <img src="./img/product image 3.png" alt="" class="product-img" />
+          <img src="./img/product image 4.png" alt="" class="product-img" />
+        </div>
+      </div>
+      <div class="details">
+        <h2 class="product__brand">
+          Conjunto Be Nice Floral Vermelho - Quimby
+        </h2>
+        <p class="product__description">
+          Conjunto Be Nice Floral Vermelho - Quimby Composto por 02 peças. Blusa
+          Regata. Short Cotton. Conjunto para menina confortável, ideal para os
+          dias mais quentes.
+        </p>
+        <span class="product__price">R$34,95</span>
+        <span class="product__actual_price">R$69.90</span>
+        <span class="product__discount">( 50% Off )</span>
+
+        <p class="product__sub_heading">Tamanho</p>
+
+        <input type="radio" name="size" value="p" checked hidden id="p-size" />
+        <label for="p-size" class="size__radio_btn check">P</label>
+        <input type="radio" name="size" value="m" hidden id="m-size" />
+        <label for="m-size" class="size__radio_btn">M</label>
+        <input type="radio" name="size" value="g" hidden id="g-size" />
+        <label for="g-size" class="size__radio_btn">G</label>
+        <input type="radio" name="size" value="gg" hidden id="gg-size" />
+        <label for="gg-size" class="size__radio_btn">GG</label>
+        <div>
+          <p class="product__sub_heading">Quantidade</p>
+          <input type="number" class="product-qtd"/>
+          <button class="button cart__btn">Comprar</button>
+          <!-- <button class="button-outline wish__btn">
+            Adicionar à lista de desejos
+          </button> -->
+          </div>
+          <div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="description bd-grid">
+      <h2 class="heading">Descrição</h2>
+      <p class="description__text">
+        Conjunto Be Nice Floral Vermelho - Quimby
+
+
+Contém:
+01 blusa regata.
+Gola arredondada.
+Estampa com aplicação de strass.
+01 short em cotton, elástico na cintura.
+Short com estampa floral e amarração na cintura.
+Modelagem: Justa.
+
+
+Composição:
+Blusa: 100% Algodão
+Short: 94% Algodão / 06% Elastano
+      </p>
+    </section>
+
+    <section class="description bd-grid">
+      <h2 class="heading">Informações Técnicas</h2>
+
+      <table>
+
+      </table>
+      <h4>Cor</h4>
+      <p class="description__text">
+        Conjunto Be Nice Floral Vermelho - Quimby
+
+
+      </p>
+    </section>
+
+    <!-- CARDS-CONTAINER -->
+    <section class="product" id="product">
+      <h2 class="product__category bd-grid">
+        Você pode se interessar por estes produtos também.
+      </h2>
+      <button class="pre__btn">
+        <img src="../assets/img/arrow.png" alt="" />
+      </button>
+      <button class="nxt__btn">
+        <img src="../assets/img/arrow.png" alt="" />
+      </button>
+      
+      <div class="container__product"></div>
+    </section>
+
+    <!-- CARDS-CONTAINER -->
+    <section class="product" id="product">
+      <h2 class="product__category bd-grid">
+        Produtos mais vendidos
+      </h2>
+      <button class="pre__btn">
+        <img src="../assets/img/arrow.png" alt="" />
+      </button>
+      <button class="nxt__btn">
+        <img src="../assets/img/arrow.png" alt="" />
+      </button>
+      
+      <div class="container__product"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer section"></footer>
+    <!-- SCRIPTS -->
+    <script src="../assets/js/navbar.js"></script>
+    
+    <script src="../assets/js/footer.js"></script>
+    <!-- <script src="../assets/js/home.js"></script> -->
+    <script src="../assets/js/product.js"></script>
+    <script src="../assets/js/carousel.js"></script>
+  </body>
+</html>

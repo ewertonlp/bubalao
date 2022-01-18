@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha sacola</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <link rel="stylesheet" href="../assets/css/cart.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header class="l-header" id="header">
+      <nav class="nav bd-grid"></nav>
+    </header>
+
+    <main class="container bd-grid">
+      <table class="cart__table">
+        <h2><i class="bx bx-shopping-bag icon-img"></i> Sua sacola</h2>
+        <thead class="cart__table_heading">
+          <tr>
+            <td>Remover</td>
+            <td>Imagem</td>
+            <td>Produto</td>
+            <td>Quantidade</td>
+            <td>Preço</td>
+            <td>Total</td>
+          </tr>
+        </thead>
+        <tbody class="cart__table_body">
+          <tr>
+            <td>
+              <a href="#"><i class="bx bx-trash icon"></i></a>
+            </td>
+            <td>
+              <img
+                src="../assets/img/vestido-infantil-feminino-flores-pespontadas-.jpg"
+                alt=""
+              />
+            </td>
+            <td>Vestido flores pespontadas</td>
+            <td>
+              <input
+                type="number"
+                autocomplete="off"
+                id="cart-qtd"
+                value="1"
+                class="cart__qtd"
+              />
+            </td>
+            <td>R$ 69,90</td>
+            <td>R$ 69,90</td>
+          </tr>
+        </tbody>
+        <tbody class="cart__table_body">
+          <tr>
+            <td>
+              <a href="#"><i class="bx bx-trash icon"></i></a>
+            </td>
+            <td>
+              <img
+                src="../assets/img/vestido-infantil-feminino-flores-pespontadas-.jpg"
+                alt=""
+              />
+            </td>
+            <td>Vestido flores pespontadas</td>
+            <td>
+              <input
+                type="number"
+                autocomplete="off"
+                id="cart-qtd"
+                value="1"
+                class="cart__qtd"
+              />
+            </td>
+            <td>R$ 69,90</td>
+            <td>R$ 69,90</td>
+          </tr>
+        </tbody>
+        <tbody class="cart__table_body">
+          <tr>
+            <td>
+              <a href="#"><i class="bx bx-trash icon"></i></a>
+            </td>
+            <td>
+              <img
+                src="../assets/img/vestido-infantil-feminino-flores-pespontadas-.jpg"
+                alt=""
+              />
+            </td>
+            <td>Vestido flores pespontadas</td>
+            <td>
+              <input
+                type="number"
+                autocomplete="off"
+                id="cart-qtd"
+                value="1"
+                class="cart__qtd"
+              />
+            </td>
+            <td>R$ 69,90</td>
+            <td>R$ 69,90</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="cart__price">
+        <tr>
+          <td>Subtotal</td>
+          <td>R$209,70</td>
+        </tr>
+      </table>
+
+      <table class="cart__button">
+        <tr>
+          <td>
+            <button class="btn-outline btn-return">Voltar à loja</button>
+          </td>
+          <td></td>
+          <td></td>
+          <td><button class="btn-outline btn-refresh">Atualizar</button></td>
+          <td>
+            <button class="btn-checkout">Finalizar Compra</button>
+          </td>
+        </tr>
+      </table>
+    </main>
+
+    <!--FOOTER    -->
+    <footer class="footer section"></footer>
+
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/footer.js"></script>
+  </body>
+</html>

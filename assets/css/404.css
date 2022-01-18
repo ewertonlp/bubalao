@@ -1,0 +1,23 @@
+.four-0-four-image {
+  display: block;
+  margin: 100px auto;
+  padding: 0 2rem;
+}
+
+.four-0-four-msg {
+  text-align: center;
+  font-size: var(--big-font-size);
+  font-weight: var(--font-regular);
+  color: var(--dark-grey);
+  margin-bottom: 100px;
+}
+
+.four-0-four-msg a {
+  color: var(--light-blue);
+}
+
+@media screen and (min-width: 768px) {
+  .four-0-four-msg {
+    margin: 0 var(--mb-4);
+  }
+}
