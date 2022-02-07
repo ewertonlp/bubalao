@@ -1,6 +1,5 @@
 /* header */
 .header {
-  background: #122331;
   position: relative;
   max-width: 80vw;
   margin: auto;
@@ -10,16 +9,24 @@
   padding: 1rem 2rem;
   z-index: 1;
 }
+
 .header a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--dark-grey);
 }
+
+.icon {
+  color: var(--dark-grey);
+}
+
 .header ul {
   list-style: none;
 }
+
 .logo {
   font-size: 2rem;
 }
+
 .menu-items {
   display: flex;
   align-items: center;

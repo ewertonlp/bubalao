@@ -9,7 +9,18 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <div class="nav__menu" id="nav-menu">
+    <div class="nav__menu header" id="nav-menu">
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bxs-grid"></i>
+      </div>
+
+      <a href="../index.html">
+        <img
+          src="../assets/img/logo.png"
+          alt="Logo da Bubalão"
+          class="nav__logo"
+        />
+      </a>
       <ul class="nav__list">
         <li class="nav__item">
           <a href="../index.html" class="nav__link active">Home</a>
@@ -78,8 +89,23 @@
           <a href="./shop.html" class="nav__link">Ofertas</a>
         </li>
       </ul>
+
+      <div class="nav__shop">
+        <a class="navbar-icon" href="./components/cart.html"
+          ><i class="bx bx-shopping-bag icon"></i
+        ></a>
+      </div>
+      <div class="nav__shop">
+        <a
+          ><i class="bx bx-user icon" id="user-img"></i>
+          <div class="login-logout-popup hide">
+            <p class="account-info">Entrar como, name</p>
+            <button class="btn" id="user-btn">Sair</button>
+          </div></a
+        >
+      </div>
     </div>
 
-    <script src="../assets/js/navbar.js"></script>
+    <!-- <script src="../assets/js/navbar.js"></script> -->
   </body>
 </html>
