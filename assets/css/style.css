@@ -407,19 +407,18 @@ img {
 }
 
 .card_img_1 {
-  background-image: url("../img/product/happy-child-in-orange-sweater-plays-with-feather-on-the-floor.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .card_img_2 {
-  background-image: url("../img/product/the-small-baby-lies-on-the-bed.jpg");
   background-position: center;
   background-size: cover;
 }
 
 .collection__data {
   align-self: flex-start;
+  z-index: 10;
 }
 
 .collection__img {
