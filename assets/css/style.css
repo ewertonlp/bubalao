@@ -406,11 +406,7 @@ img {
   transition: 0.3s;
 }
 
-.card_img_1 {
-  background-position: center;
-  background-size: cover;
-}
-
+.card_img_1,
 .card_img_2 {
   background-position: center;
   background-size: cover;
