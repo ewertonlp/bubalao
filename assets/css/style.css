@@ -241,6 +241,32 @@ img {
   height: calc(80vh - 2rem);
 }
 
+.section__info {
+  max-width: 1024px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 4rem 2rem;
+}
+
+.section__info i {
+  color: var(--dark-pink);
+}
+
+.info-title,
+.info-text {
+  margin-bottom: 2rem;
+  color: var(--dark-grey);
+}
+
+.info-text {
+  line-height: 1.5rem;
+  font-size: var(--regular-font-size);
+}
+
 .home_sneaker {
   position: relative;
   display: flex;
@@ -751,6 +777,16 @@ img {
     font-size: var(--normal-font-size);
     font-weight: var(--font-regular);
   }
+
+  .section__info {
+    width: calc(90vw - 2rem);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 4rem auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -841,6 +877,16 @@ img {
   .newsletter__subscribe {
     width: 360px;
     height: max-content;
+  }
+
+  .section__info {
+    width: calc(90vw - 2rem);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 4rem auto;
   }
 }
 

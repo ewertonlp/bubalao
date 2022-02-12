@@ -33,7 +33,7 @@ h2 {
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
-  border-bottom: 1px solid var(--light-blue);
+  border-bottom: 1px solid var(--grey);
 }
 
 .cart__table td:nth-child(1),
@@ -92,6 +92,7 @@ input[type="number"] {
   border-collapse: collapse;
   table-layout: fixed;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .cart__price td {

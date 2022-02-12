@@ -1,87 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efetue o pagamento</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minha sacola</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link rel="stylesheet" href="../assets/css/checkout.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
 
-  <link rel="stylesheet" href="../assets/css/checkout.css" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
-</head>
+  <body>
+    <img src="./img/loader.gif" alt="" class="loader" />
 
-<body>
-  <img src="./img/loader.gif" alt="" class="loader" />
+    <div class="alert-box">
+      <img src="./img/error.png" alt="" class="alert-img" />
+      <p class="alert-msg">Error message</p>
+    </div>
 
-  <div class="alert-box">
-    <img src="./img/error.png" alt="" class="alert-img" />
-    <p class="alert-msg">Error message</p>
-  </div>
-  <header class="l-header" id="header">
-    <nav class="nav bd-grid"></nav>
-  </header>
+    <main class="main l-main">
+      <h3 class="section-title">Pagamento</h3>
+     <section class="home__container_checkout">
+        <div class="personal__info">
+          <div class="signup__form_personal">
+            <h4><i class="bx bxs-user icon"></i>Informações pessoais</h4>
+            <p><small>Pessoa responsável pelo pedido.</small></p>
+            <input
+              type="text"
+              autocomplete="off"
+              id="name"
+              placeholder="Nome Completo*"
+            />
+            <input
+              type="email"
+              autocomplete="off"
+              id="email"
+              placeholder="email*"
+            />
 
-  <img src="../assets/img/logo.png" alt="" class="logo" />
+            <div class="checkout__form_flex">
+              <input
+                type="number"
+                autocomplete="off"
+                id="cpf"
+                placeholder="CPF / CNPJ*"
+              />
+              <input
+                type="tel"
+                autocomplete="off"
+                id="tel"
+                placeholder="Celular*"
+              />
+            </div>
+          </div>
 
-  <h3 class="section-title">Crie sua conta</h3>
+          <div class="checkout__form_address">
+            <h4>
+              <i class="bx bxs-truck icon bx-sm"></i>Informações de entrega
+            </h4>
+            <p><small>Endereço onde será entregue seu pedido.</small></p>
+            <div class="form_cep">
+              <input
+                type="number"
+                autocomplete="off"
+                id="cep"
+                placeholder="CEP*"
+              /><a href="#" class="search-cep"
+                ><p><small>Não sei meu CEP</small></p></a
+              >
+            </div>
 
-  <section class="checkout__form">
-    <div class="signup__form_personal">
-      <p><i class="bx bxs-user icon"></i>Informações pessoais</p>
-      <input type="email" autocomplete="off" id="email" placeholder="email*" />
-      <input type="text" autocomplete="off" id="name" placeholder="Nome Completo*" />
+            <input
+              type="text"
+              autocomplete="off"
+              id="endereco"
+              placeholder="Endereço*"
+            />
 
-      <div class="checkout__form_flex">
-        <input type="number" autocomplete="off" id="cpf" placeholder="CPF / CNPJ*" />
-        <input type="tel" autocomplete="off" id="tel" placeholder="Celular*" />
+            <div class="checkout__form_flex">
+              <input
+                type="number"
+                autocomplete="off"
+                id="numero_casa"
+                placeholder="Nº *"
+              />
+              <input
+                type="text"
+                autocomplete="off"
+                id="complemento"
+                placeholder="Complemento"
+              />
+            </div>
+
+            <input
+              type="text"
+              autocomplete="off"
+              id="bairro"
+              placeholder="Bairro*"
+            />
+
+            <div class="checkout__form_flex">
+              <input
+                type="text"
+                autocomplete="off"
+                id="bairro"
+                placeholder="Cidade*"
+              />
+
+              <input
+                type="text"
+                autocomplete="off"
+                id="estado"
+                placeholder="Estado*"
+              />
+            </div>
+          </div>
+
+          
+        </div>
+
+        <div class="checkout__purchase_info">
+
+          <div class="checkout__form_payment">
+            <h4>
+              <i class="bx bxs-credit-card-front bx-sm icon"></i>Método de
+              Pagamento
+            </h4>
+            <p><small>Escolha a forma de pagamento.</small></p>
+            <input
+              type="number"
+              autocomplete="off"
+              id="card-number"
+              placeholder="Número do cartão"
+            />
+            <input
+              type="text"
+              autocomplete="off"
+              id="card-name"
+              placeholder="Nome (igual ao do cartão)"
+            />
+
+            <div class="checkout__form_payment-num">
+              <input
+                type="date"
+                autocomplete="off"
+                id="card-date"
+                placeholder="mm/aa"
+              />
+              <input
+                type="number"
+                autocomplete="off"
+                id="card-cvc"
+                placeholder="cvc"
+              />
+            </div>
+
+            <input
+              type="number"
+              autocomplete="off"
+              id="cpf"
+              placeholder="CPF*"
+            />
+
+            <select
+              type="number"
+              autocomplete="off"
+              id="card-parcels"
+              placeholder="Parcelas"
+            >
+              <option value="Parcelas" selected disabled>Parcelas</option>
+              <option value="1x">1x de R$ 0,00 sem juros</option>
+              <option value="1x">2x de R$ 0,00 sem juros</option>
+              <option value="1x">3x de R$ 0,00 sem juros</option>
+              <option value="1x">4x de R$ 0,00 com juros</option>
+            </select>
+          </div>
+          <div class="checkout__purchase_items">
+            <h4>
+              <i class='bx bxs-receipt icon bx-sm'></i>Itens do pedido
+            </h4>
+            <p><small>Confira os itens do seu pedido.</small></p>
+
+            <table class="cart__table">
+              <thead class="cart__table_heading">
+                <tr>
+                  
+                  <td>Produto</td>
+                  <td>Quantidade</td>
+                  <td>Preço</td>
+                  <td>Total</td>
+                </tr>
+              </thead>
+              <tbody class="cart__table_body">
+                <tr>
+                  <td>Vestido flores</td>
+                    <td class="cart__qtd"> 1
+                    </td>
+                  <td>R$ 69,90</td>
+                  <td>R$ 69,90</td>
+                </tr>
+              </tbody>
+              <tbody class="cart__table_body">
+                <tr>
+                 
+                  <td>Vestido flores</td>
+                  <td class="cart__qtd"> 1
+                  </td>
+                  <td>R$ 69,90</td>
+                  <td>R$ 69,90</td>
+                </tr>
+              </tbody>
+              <tbody class="cart__table_body">
+                <tr>
+                 
+                  <td>Vestido flores </td>
+                  <td class="cart__qtd"> 1
+                  </td>
+                  <td>R$ 69,90</td>
+                  <td>R$ 69,90</td>
+                </tr>
+              </tbody>
+            </table>
+
+
+            <div class="box-btn">
+              <input
+                type="text"
+                autocomplete="off"
+                id="cupom"
+                placeholder="Cupom de desconto?"
+              />
+              <button class="checkout__button btn-cupom">Validar o cupom</button>
+            </div>
+
+            <table class="cart__price">
+              <tr>
+                <td>Subtotal:</td>
+                <td>R$ 0,00</td>
+              </tr>
+              <tr>
+                <td>Frete:</td>
+                <td>R$ 0,00</td>
+              </tr>
+              <tr>
+                <td>Total:</td>
+                <td>R$ 0,00</td>
+              </tr>
+            </table>
+          </div>
+
+        
+        </div>
       </div>
 
 
-      <div class="checkout__form_address">
-        <p><i class="bx bxs-truck icon"></i>Informações de entrega</p>
-        <input type="number" autocomplete="off" id="cep" placeholder="CEP*" />
-        <input type="text" autocomplete="off" id="endereco" placeholder="Endereço*" />
-
-        <div class="checkout__form_flex">
-          <input type="number" autocomplete="off" id="numero_casa" placeholder="Nº *" />
-          <input type="text" autocomplete="off" id="complemento" placeholder="Complemento" />
-        </div>
-
-        <input type="text" autocomplete="off" id="bairro" placeholder="Bairro*" />
-
-        <div class="checkout__form_flex">
-          <input type="text" autocomplete="off" id="bairro" placeholder="Cidade*" />
-
-          <input type="text" autocomplete="off" id="estado" placeholder="Estado*" />
-        </div>
+      <div>
+        <div class="checkout__btn">
+                  
+          <button class="checkout__button btn-payment"><i class='bx bxs-lock' ></i> Finalizar Compra</button>
+          
       </div>
-    </div>
+      </div>
+    </section>
+    </main>
 
-    <div class="checkout__btn">
-      <p>
-        <i class="bx bxs-message-alt-error icon"></i>Informações importantes
-      </p>
-
-      <input type="checkbox" checked class="checkbox" id="terms-and-cond" />
-      <label for="terms-and-cond" class="label">Estou de acordo com os <a href="#">Termos e Condições</a></label>
-      <br />
-
-      <input class="checkbox" type="checkbox" id="notification" />
-      <label for="notification" class="label">Quero receber novidades da Bubalão</label>
-      <button class="button btn-signup">Pagar</button>
-      <a href="./login.html" class="link">Já possui uma conta? Faça o Login</a>
-    </div>
-  </section>
-  </div>
-
-  <!--FOOTER    -->
-  <footer class="footer section"></footer>
-
-  <script src="../assets/js/navbar.js"></script>
-  <script src="../assets/js/footer.js"></script>
-</body>
-
+    <script src="../assets/js/navbar.js"></script>
+    <script src="../assets/js/footer.js"></script>
+  </body>
 </html>
