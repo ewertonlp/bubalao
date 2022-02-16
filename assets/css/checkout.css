@@ -16,7 +16,7 @@ body {
 small {
   font-size: 0.75rem;
   color: #747474;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding-left: 0.5rem;
 }
 
@@ -86,18 +86,67 @@ small {
   background-color: var(--white-color);
 }
 
+.checkout__btn {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout__btn_info {
+  display: flex;
+  color: var(--grey);
+  font-size: var(--smaller-font-size);
+}
+
+.checkout__btn_info i {
+  font-size: var(--bigger-font-size);
+}
+
+.btn-payment-type {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--dark-light);
+  padding-top: 1rem;
+}
+
+.btn-payment-type-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-payment-type-content p {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-img {
+  width: 75px;
+  border: none;
+  outline: none;
+}
+
+.btn-img-pix {
+  width: 65px;
+}
+
 input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="number"],
 input[type="date"],
+input[type="month"],
 input[type="tel"],
 textarea,
 select {
   display: block;
   width: 100%;
   height: 48px;
-  padding: 1.2rem;
+  padding-left: 0.75rem;
   background-color: var(--light-grey);
   border: none;
   border-radius: 0.5rem;

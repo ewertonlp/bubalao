@@ -1,275 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Efetue o pagamento</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Efetue o pagamento</title>
 
-    <link rel="stylesheet" href="../assets/css/checkout.css" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
-  </head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
 
-  <body>
-    <img src="./img/loader.gif" alt="" class="loader" />
+  <link rel="stylesheet" href="../assets/css/checkout.css" />
+  <link rel="stylesheet" href="../assets/css/style.css" />
+</head>
 
-    <div class="alert-box">
-      <img src="./img/error.png" alt="" class="alert-img" />
-      <p class="alert-msg">Error message</p>
-    </div>
+<body>
+  <img src="./img/loader.gif" alt="" class="loader" />
 
-    <main class="main l-main">
-      <h3 class="section-title">Pagamento</h3>
-     <section class="home__container_checkout">
-        <div class="personal__info">
-          <div class="signup__form_personal">
-            <h4><i class="bx bxs-user icon"></i>Informações pessoais</h4>
-            <p><small>Pessoa responsável pelo pedido.</small></p>
-            <input
-              type="text"
-              autocomplete="off"
-              id="name"
-              placeholder="Nome Completo*"
-            />
-            <input
-              type="email"
-              autocomplete="off"
-              id="email"
-              placeholder="email*"
-            />
+  <div class="alert-box">
+    <img src="./img/error.png" alt="" class="alert-img" />
+    <p class="alert-msg">Error message</p>
+  </div>
 
-            <div class="checkout__form_flex">
-              <input
-                type="number"
-                autocomplete="off"
-                id="cpf"
-                placeholder="CPF / CNPJ*"
-              />
-              <input
-                type="tel"
-                autocomplete="off"
-                id="tel"
-                placeholder="Celular*"
-              />
-            </div>
+  <main class="main l-main">
+    <h3 class="section-title">Pagamento</h3>
+    <section class="home__container_checkout">
+      <div class="personal__info">
+        <div class="signup__form_personal">
+          <h4><i class="bx bxs-user icon"></i>Informações pessoais</h4>
+          <p><small>Pessoa responsável pelo pedido.</small></p>
+          <input type="text" autocomplete="off" id="name" placeholder="Nome Completo*" />
+          <input type="email" autocomplete="off" id="email" placeholder="email*" />
+
+          <div class="checkout__form_flex">
+            <input type="number" autocomplete="off" id="cpf" placeholder="CPF / CNPJ*" />
+            <input type="tel" autocomplete="off" id="tel" placeholder="Celular*" />
+          </div>
+        </div>
+
+        <div class="checkout__form_address">
+          <h4>
+            <i class="bx bxs-truck icon bx-sm"></i>Informações de entrega
+          </h4>
+          <p><small>Endereço onde será entregue seu pedido.</small></p>
+          <div class="form_cep">
+            <input type="number" autocomplete="off" id="cep" placeholder="CEP*" /><a href="#" class="search-cep">
+              <p><small>Não sei meu CEP</small></p>
+            </a>
           </div>
 
-          <div class="checkout__form_address">
-            <h4>
-              <i class="bx bxs-truck icon bx-sm"></i>Informações de entrega
-            </h4>
-            <p><small>Endereço onde será entregue seu pedido.</small></p>
-            <div class="form_cep">
-              <input
-                type="number"
-                autocomplete="off"
-                id="cep"
-                placeholder="CEP*"
-              /><a href="#" class="search-cep"
-                ><p><small>Não sei meu CEP</small></p></a
-              >
-            </div>
+          <input type="text" autocomplete="off" id="endereco" placeholder="Endereço*" />
 
-            <input
-              type="text"
-              autocomplete="off"
-              id="endereco"
-              placeholder="Endereço*"
-            />
-
-            <div class="checkout__form_flex">
-              <input
-                type="number"
-                autocomplete="off"
-                id="numero_casa"
-                placeholder="Nº *"
-              />
-              <input
-                type="text"
-                autocomplete="off"
-                id="complemento"
-                placeholder="Complemento"
-              />
-            </div>
-
-            <input
-              type="text"
-              autocomplete="off"
-              id="bairro"
-              placeholder="Bairro*"
-            />
-
-            <div class="checkout__form_flex">
-              <input
-                type="text"
-                autocomplete="off"
-                id="bairro"
-                placeholder="Cidade*"
-              />
-
-              <input
-                type="text"
-                autocomplete="off"
-                id="estado"
-                placeholder="Estado*"
-              />
-            </div>
+          <div class="checkout__form_flex">
+            <input type="number" autocomplete="off" id="numero_casa" placeholder="Nº *" />
+            <input type="text" autocomplete="off" id="complemento" placeholder="Complemento" />
           </div>
 
+          <input type="text" autocomplete="off" id="bairro" placeholder="Bairro*" />
+
+          <div class="checkout__form_flex">
+            <input type="text" autocomplete="off" id="bairro" placeholder="Cidade*" />
+
+            <input type="text" autocomplete="off" id="estado" placeholder="Estado*" />
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="checkout__purchase_info">
+
+        <div class="checkout__form_payment">
+          <h4>
+            <i class="bx bxs-credit-card-front bx-sm icon"></i>Método de
+            Pagamento
+          </h4>
+          <p><small>Escolha a forma de pagamento.</small></p>
+
+          <div class="btn-payment-type">
+            <div class="btn-payment-type-content">
+              <a href=""><img src="../assets/img/cartao-de-credito-azul.png" alt="" class="btn-img"></a>
+              <p>Cartão de Crédito</p>
+            </div>
+            <div class="btn-payment-type-content">
+              <a href=""><img src="../assets/img/logo-pix-icone-azul.png" alt="" class="btn-img-pix"></a>
+              <p>Pix</p>
+            </div>
+            <div class="btn-payment-type-content">
+              <a href="">
+                <img src="../assets/img/codigo-de-barra-azul.png" alt="" class="btn-img"> </a>
+       
+          <div><p>Boleto</p></div> 
+            </div>
+          </div>
           
-        </div>
-
-        <div class="checkout__purchase_info">
-
-          <div class="checkout__form_payment">
-            <h4>
-              <i class="bx bxs-credit-card-front bx-sm icon"></i>Método de
-              Pagamento
-            </h4>
-            <p><small>Escolha a forma de pagamento.</small></p>
-            <input
-              type="number"
-              autocomplete="off"
-              id="card-number"
-              placeholder="Número do cartão"
-            />
-            <input
-              type="text"
-              autocomplete="off"
-              id="card-name"
-              placeholder="Nome (igual ao do cartão)"
-            />
-
-            <div class="checkout__form_payment-num">
-              <input
-                type="date"
-                autocomplete="off"
-                id="card-date"
-                placeholder="mm/aa"
-              />
-              <input
-                type="number"
-                autocomplete="off"
-                id="card-cvc"
-                placeholder="cvc"
-              />
-            </div>
-
-            <input
-              type="number"
-              autocomplete="off"
-              id="cpf"
-              placeholder="CPF*"
-            />
-
-            <select
-              type="number"
-              autocomplete="off"
-              id="card-parcels"
-              placeholder="Parcelas"
-            >
-              <option value="Parcelas" selected disabled>Parcelas</option>
-              <option value="1x">1x de R$ 0,00 sem juros</option>
-              <option value="1x">2x de R$ 0,00 sem juros</option>
-              <option value="1x">3x de R$ 0,00 sem juros</option>
-              <option value="1x">4x de R$ 0,00 com juros</option>
-            </select>
-          </div>
-          <div class="checkout__purchase_items">
-            <h4>
-              <i class='bx bxs-receipt icon bx-sm'></i>Itens do pedido
-            </h4>
-            <p><small>Confira os itens do seu pedido.</small></p>
-
-            <table class="cart__table">
-              <thead class="cart__table_heading">
-                <tr>
-                  
-                  <td>Produto</td>
-                  <td>Quantidade</td>
-                  <td>Preço</td>
-                  <td>Total</td>
-                </tr>
-              </thead>
-              <tbody class="cart__table_body">
-                <tr>
-                  <td>Vestido flores</td>
-                    <td class="cart__qtd"> 1
-                    </td>
-                  <td>R$ 69,90</td>
-                  <td>R$ 69,90</td>
-                </tr>
-              </tbody>
-              <tbody class="cart__table_body">
-                <tr>
-                 
-                  <td>Vestido flores</td>
-                  <td class="cart__qtd"> 1
-                  </td>
-                  <td>R$ 69,90</td>
-                  <td>R$ 69,90</td>
-                </tr>
-              </tbody>
-              <tbody class="cart__table_body">
-                <tr>
-                 
-                  <td>Vestido flores </td>
-                  <td class="cart__qtd"> 1
-                  </td>
-                  <td>R$ 69,90</td>
-                  <td>R$ 69,90</td>
-                </tr>
-              </tbody>
-            </table>
 
 
-            <div class="box-btn">
-              <input
-                type="text"
-                autocomplete="off"
-                id="cupom"
-                placeholder="Cupom de desconto?"
-              />
-              <button class="checkout__button btn-cupom">Validar o cupom</button>
-            </div>
+          <input type="number" autocomplete="off" id="card-number" required placeholder="Número do cartão" />
+          <input type="text" autocomplete="off" id="card-name" required placeholder="Nome (igual ao do cartão)" />
 
-            <table class="cart__price">
-              <tr>
-                <td>Subtotal:</td>
-                <td>R$ 0,00</td>
-              </tr>
-              <tr>
-                <td>Frete:</td>
-                <td>R$ 0,00</td>
-              </tr>
-              <tr>
-                <td>Total:</td>
-                <td>R$ 0,00</td>
-              </tr>
-            </table>
+          <div class="checkout__form_payment-num">
+            <input type="month" placeholder="mm/aa" min="02-2022" autocomplete="off" id="card-date" required
+              pattern="[0-9]{2}-[0-9]{4}" />
+            <input type="text" autocomplete="off" id="card-cvc" required placeholder="cvc" />
           </div>
 
-        
+          <input type="number" autocomplete="off" id="cpf" required placeholder="CPF*" />
+
+          <select name="select" autocomplete="off" id="card-parcels" placeholder="Parcelas">
+            <option value="Parcelas" selected disabled>Escolha as parcelas</option>
+            <option value="1x">1x de R$ 0,00 sem juros</option>
+            <option value="1x">2x de R$ 0,00 sem juros</option>
+            <option value="1x">3x de R$ 0,00 sem juros</option>
+            <option value="1x">4x de R$ 0,00 com juros</option>
+          </select>
         </div>
+        <div class="checkout__purchase_items">
+          <h4>
+            <i class='bx bxs-receipt icon bx-sm'></i>Itens do pedido
+          </h4>
+          <p><small>Confira os itens do seu pedido.</small></p>
+
+          <table class="cart__table">
+            <thead class="cart__table_heading">
+              <tr>
+
+                <td>Produto</td>
+                <td>Quantidade</td>
+                <td>Preço</td>
+                <td>Total</td>
+              </tr>
+            </thead>
+            <tbody class="cart__table_body">
+              <tr>
+                <td>Vestido flores</td>
+                <td class="cart__qtd"> 1
+                </td>
+                <td>R$ 69,90</td>
+                <td>R$ 69,90</td>
+              </tr>
+            </tbody>
+            <tbody class="cart__table_body">
+              <tr>
+
+                <td>Vestido flores</td>
+                <td class="cart__qtd"> 1
+                </td>
+                <td>R$ 69,90</td>
+                <td>R$ 69,90</td>
+              </tr>
+            </tbody>
+            <tbody class="cart__table_body">
+              <tr>
+
+                <td>Vestido flores </td>
+                <td class="cart__qtd"> 1
+                </td>
+                <td>R$ 69,90</td>
+                <td>R$ 69,90</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <div class="box-btn">
+            <input type="text" autocomplete="off" id="cupom" placeholder="Cupom de desconto?" />
+            <button class="checkout__button btn-cupom">Validar o cupom</button>
+          </div>
+
+          <table class="cart__price">
+            <tr>
+              <td>Subtotal:</td>
+              <td>R$ 0,00</td>
+            </tr>
+            <tr>
+              <td>Frete:</td>
+              <td>R$ 0,00</td>
+            </tr>
+            <tr>
+              <td>Total:</td>
+              <td>R$ 0,00</td>
+            </tr>
+          </table>
+        </div>
+
+
+      </div>
       </div>
 
 
       <div>
         <div class="checkout__btn">
-                  
-          <button class="checkout__button btn-payment"><i class='bx bxs-lock' ></i> Finalizar Compra</button>
+<div>
+  <button class="checkout__button btn-payment"><i class='bx bxs-lock-alt'></i> Finalizar Compra</button>
+</div>
           
-      </div>
+<div class="checkout__btn_info">
+  <div><i class='bx bxs-lock-alt'></i></div>
+  <p>Checkout
+  <br/>Seguro</p>
+</div>
+
+        </div>
+        
       </div>
     </section>
-    </main>
+  </main>
 
-    <script src="../assets/js/navbar.js"></script>
-    <script src="../assets/js/footer.js"></script>
-  </body>
+  <script src="../assets/js/navbar.js"></script>
+  <script src="../assets/js/footer.js"></script>
+</body>
+
 </html>

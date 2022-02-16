@@ -9,8 +9,7 @@
 body {
   width: 100%;
   min-height: 100vh;
-
-  background-color: var(--super-light-blue);
+  background-color: var(--light-grey);
   font-family: "Poppins", sans-serif;
 }
 
@@ -42,28 +41,34 @@ body {
   font-size: var(--bigger-font-size) !important;
   font-weight: var(--font-medium);
   color: var(--light-pink);
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-5);
   text-align: center;
 }
 
-.signup__form {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-  margin: var(--mb-2) 0;
-  justify-content: center;
+.signup__form_personal,
+.signup__form_address,
+.signup__form_btn {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background-color: var(--white-color);
 }
 
-.login__form {
-  display: block;
-  max-width: 20vw;
-  width: 100%;
+.signup__form_personal > p,
+.signup__form_address p,
+.signup__form_btn p {
+  font-weight: var(--font-semi-bold);
+  color: var(--dark-grey);
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .icon {
   color: var(--light-pink);
   font-size: var(--h2-font-size);
-  margin: 0 0.5rem;
+  margin-right: 0.5rem;
 }
 
 input[type="text"],
@@ -76,26 +81,33 @@ textarea {
   display: block;
   width: 100%;
   height: 48px;
-  padding: 28px;
+  padding: 0.75rem;
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: var(--light-grey);
   border: none;
   outline: none;
-  margin: 28px 0;
-  text-transform: capitalize;
+  margin: 1.5rem 0;
   color: var(--dark-grey);
   font-size: 0.975rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   font-family: "Poppins", sans-serif;
 }
 
 .signup__form_flex {
   display: flex;
   padding: 0;
+  margin: -25px 0;
+}
+
+.signup__form_flex:last-child {
+  margin-bottom: -5px;
 }
 
 #cpf {
   width: 120px;
+}
+
+#tel {
+  width: 50%;
 }
 
 #numero_casa {
@@ -103,18 +115,13 @@ textarea {
   margin-right: 1rem;
 }
 
-#tel,
 #estado {
   width: 100px;
   margin-left: 1rem;
 }
 
-.signup__form_btn {
-  margin-top: var(--mb-4);
-}
-
 #terms-and-cond {
-  margin-top: var(--mb-4);
+  margin-top: var(--mb-6);
 }
 
 ::placeholder {
@@ -128,6 +135,7 @@ textarea {
   color: var(--white-color);
   font-size: var(--big-font-size);
   padding: 0.8rem 7.25rem;
+  margin: 1.5rem auto;
   font-weight: var(--font-medium);
   border-radius: 0.5rem;
   outline: none;
@@ -138,7 +146,7 @@ textarea {
 
 .btn-signup {
   padding: 0.825rem 3.5rem;
-  margin: 1rem 0 2rem 0;
+  margin: 2rem auto;
 }
 .button:hover {
   transform: translateY(-0.25rem);
@@ -247,44 +255,33 @@ textarea {
 }
 
 /* ====== MEDIA QUERIES ========= */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1024px) {
   .signup__form {
     display: flex;
     flex-direction: column;
-    margin: 0 1rem;
+    margin: 1rem auto;
   }
 
+  .signup__form_personal,
+  .signup__form_address,
   .signup__form_btn {
-    margin: var(--mb-1) 0;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .signup__form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1rem;
-  }
-
-  .signup__form_btn {
-    margin: var(--mb-1) 0;
+    margin: 1rem 0;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .signup__form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-    margin: 0 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin: 2rem auto;
   }
 }
 
-@media screen and (min-width: 1240px) {
+/* @media screen and (min-width: 1240px) {
   .signup__form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
+    gap: rem;
     margin: 0 1.5rem;
-  }
-}
+  } */
