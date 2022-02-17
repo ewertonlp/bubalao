@@ -68,7 +68,7 @@ input[type="password"] {
   display: block;
   background-color: var(--light-pink);
   color: var(--white-color);
-  font-size: var(--regular-font-size);
+  font-size: var(--big-font-size);
   font-weight: var(--font-semi-bold);
   border-radius: 0.5rem;
   outline: none;
@@ -76,6 +76,8 @@ input[type="password"] {
   cursor: pointer;
   transition: 0.3s ease;
   margin: 1.5rem 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .button i {
