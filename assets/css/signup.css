@@ -163,6 +163,7 @@ textarea {
   background-color: #fff;
   border: 1px solid #383838;
   cursor: pointer;
+  margin-right: 0.5rem;
 }
 
 .checkbox:checked {
@@ -188,17 +189,20 @@ textarea {
   display: block;
 }
 
-.label {
-  display: inline-block;
-  margin-bottom: 10px;
-  padding-left: 5px;
-  font-size: 0.875rem;
+.signup__btn_check {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: var(--regular-font-size);
   font-weight: 300;
+  line-height: 1.5rem;
   color: var(--dark-grey);
 }
 
-.label a {
-  color: var(--dark-grey);
+.signup__btn_check a {
+  color: var(--dark-pink);
+  text-decoration: none;
 }
 
 .link {
