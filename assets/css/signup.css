@@ -52,6 +52,7 @@ body {
   border-radius: 0.75rem;
   padding: 1rem;
   background-color: var(--white-color);
+  margin: 0 1rem;
 }
 
 .signup__form_personal > p,
@@ -260,6 +261,11 @@ textarea {
 
 /* ====== MEDIA QUERIES ========= */
 @media screen and (max-width: 1024px) {
+  .container {
+    display: block;
+    margin: 3rem 2rem;
+  }
+
   .signup__form {
     display: flex;
     flex-direction: column;
