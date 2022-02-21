@@ -376,10 +376,6 @@ img {
   height: 70%;
 }
 
-.produto__img {
-  width: 100%;
-}
-
 .produto__nome {
   font-size: var(--regular-font-size);
   /* letter-spacing: 0.1rem; */
