@@ -1,16 +1,21 @@
-const productImages = document.querySelectorAll(".product__images img");
-const productImageSlide = document.querySelector(".image__slider");
+const productImages = document.getElementById("productImg");
+const smallImg = document.getElementsByClassName("product__img");
 
-let activeImageSlide = 0;
-
-productImages.forEach((item, i) => {
-  item.addEventListener("click", () => {
-    productImages[activeImageSlide].classList.remove("active");
-    item.classList.add("active");
-    productImageSlide.style.backgroundImage = `url('${item.src}')`;
-    activeImageSlide = i;
-  });
-});
+smallImg[0].onclick = function () {
+  productImages.src = smallImg[0].src;
+};
+smallImg[1].onclick = function () {
+  productImages.src = smallImg[1].src;
+};
+smallImg[2].onclick = function () {
+  productImages.src = smallImg[2].src;
+};
+smallImg[3].onclick = function () {
+  productImages.src = smallImg[3].src;
+};
+smallImg[4].onclick = function () {
+  productImages.src = smallImg[4].src;
+};
 
 // TOGGLE SIZE BUTTONS
 const sizeBtns = document.querySelectorAll(".size__radio_btn ");

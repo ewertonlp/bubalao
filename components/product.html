@@ -10,45 +10,269 @@
       href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../assets/css/header.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/product.css" />
   </head>
   <body>
-    <nav class="nav bd-grid"></nav>
+        <!-- Início do Header -->
+        <header class="header">
+          <div class="container">
+            <div class="row v-center">
+              <div class="header-item item-left">
+                <div class="logo">
+                  <a href="../index.html">
+                    <img
+                      src="../assets/img/logo.png"
+                      alt="Logo da Bubalão"
+                      class="nav__logo"
+                    />
+                  </a>
+                </div>
+              </div>
+    
+              <!-- Início do menu -->
+              <div class="header-item item-center">
+                <div class="menu-overlay"></div>
+                <nav class="menu">
+                  <div class="mobile-menu-head">
+                    <div class="go-back"><i class='bx bx-chevron-left bx-sm' ></i></i></div>
+                    <div class="current-menu-title"></div>
+                    <div class="mobile-menu-close">&times;</div>
+                  </div>
+                  <ul class="menu-main">
+                    <li class="menu-item-has-children">
+                      <a href="#"
+                        >Todos os Produtos<i class='bx bx-chevron-down bx-sm' ></i></i
+                      ></a>
+                      <div class="sub-menu mega-menu mega-menu-column-4">
+                        <div class="list-item">
+                          <h4 class="title">Menina</h4>
+                          <ul>
+                            <li><a href="#">Acessórios</a></li>
+                            <li class="menu-item-has-children-1">
+                              <a href="#">Bermudas, Shorts e Saias<i class='bx bx-chevron-down'></i></a>
+                              <div class="sub-menu-1 mega-menu mega-menu-column-4">
+                                <div class="list-item">
+                                  <ul>
+                                    <li><a href="#">Cores</a></li>
+                                    <li><a href="#">Marcas</a></li>
+                                    <li><a href="#">Tamanhos</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="menu-item-has-children-1">
+                              <a href="#">Body<i class='bx bx-chevron-down' ></i></a>
+                              <div class="sub-menu-1 mega-menu mega-menu-column-4">
+                                <div class="list-item">
+                                  <ul>
+                                    <li><a href="#">Cores</a></li>
+                                    <li><a href="#">Marcas</a></li>
+                                    <li><a href="#">Tamanhos</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </li>
+                            <li><a href="#">Calçados<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Calças<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Camisas e Camisetas<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Casacos e Malhas<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Conjuntos<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Macacões<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Moda Praia<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Pijamas e Camisolas<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Vestidos<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Linha Festas<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Linha Fantasia<i class='bx bx-chevron-down' ></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="list-item">
+                          <h4 class="title">Menino</h4>
+                          <ul>
+                            <li><a href="#">Acessórios<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Bermudas, Shorts<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Calçados<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Calças<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Camisas e Camisetas<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Casacos e Malhas<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Conjuntos<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Moda Praia<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Pijamas<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Linha Festas<i class='bx bx-chevron-down' ></i></a></li>
+                            <li><a href="#">Linha Fantasia<i class='bx bx-chevron-down' ></i></a></li>
+                          </ul>
+                        </div>
+                        <div class="list-item">
+                          <h4 class="title">Outros</h4>
+                          <ul>
+                            <li><a href="#">Batizados</a></li>
+                            <li><a href="#">Calçados</a></li>
+                            <li><a href="#">Mantas e Cobertores</a></li>
+                            <li><a href="#">Saída Maternidade</a></li>
+                          </ul>
+    
+                          <h4 class="title">Tamanhos</h4>
+                          <ul>
+                            <li><a href="#">Bebê (RN ao GG)</a></li>
+                            <li><a href="#">Kids (1 a 8 anos)</a></li>
+                          </ul>
+                        </div>
+                        <div class="list-item">
+                          <img src="../assets/img/product/shop2.jpg" alt="shop" />
+                        </div>
+                      </div>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Novidades<i class='bx bx-chevron-down bx-sm' ></i></a>
+                      <div class="sub-menu mega-menu mega-menu-column-4">
+                        <div class="list-item text-center">
+                          <a href="#">
+                            <img src="../assets/img/produto1.jpg" alt="new Product" />
+                            <h4 class="title">Produto 1</h4>
+                          </a>
+                        </div>
+                        <div class="list-item text-center">
+                          <a href="#">
+                            <img src="../assets/img/produto2.jpg" alt="new Product" />
+                            <h4 class="title">Produto 2</h4>
+                          </a>
+                        </div>
+                        <div class="list-item text-center">
+                          <a href="#">
+                            <img src="../assets/img/produto3.jpg" alt="new Product" />
+                            <h4 class="title">Produto 3</h4>
+                          </a>
+                        </div>
+                        <div class="list-item text-center">
+                          <a href="#">
+                            <img src="../assets/img/produto4.jpg" alt="new Product" />
+                            <h4 class="title">Produto 4</h4>
+                          </a>
+                        </div>
+                      </div>
+                    </li>
+    
+                    <li class="menu-item-has-children">
+                      <a href="#">Menina<i class='bx bx-chevron-down bx-sm' ></i></a>
+                      <div class="sub-menu single-column-menu">
+                        <ul>
+                          <li><a href="#">Acessórios</a></li>
+                          <li><a href="#">Bermudas, Shorts e Saias</a></li>
+                          <li><a href="#">Body</a></li>
+                          <li><a href="#">Calçados</a></li>
+                          <li><a href="#">Calças</a></li>
+                          <li><a href="#">Camisas e Camisetas</a></li>
+                          <li><a href="#">Casacos e Malhas</a></li>
+                          <li><a href="#">Conjuntos</a></li>
+                          <li><a href="#">Macacões</a></li>
+                          <li><a href="#">Moda Praia</a></li>
+                          <li><a href="#">Pijamas e Camisolas</a></li>
+                          <li><a href="#">Vestidos</a></li>
+                          <li><a href="#">Linha Festas</a></li>
+                          <li><a href="#">Linha Fantasia</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="menu-item-has-children">
+                      <a href="#">Menino<i class='bx bx-chevron-down bx-sm' ></i></a>
+                      <div class="sub-menu single-column-menu">
+                        <ul>
+                          <li><a href="#">Acessórios</a></li>
+                          <li><a href="#">Bermudas, Shorts</a></li>
+                          <li><a href="#">Calçados</a></li>
+                          <li><a href="#">Calças</a></li>
+                          <li><a href="#">Camisas e Camisetas</a></li>
+                          <li><a href="#">Casacos e Malhas</a></li>
+                          <li><a href="#">Conjuntos</a></li>
+                          <li><a href="#">Moda Praia</a></li>
+                          <li><a href="#">Pijamas</a></li>
+                          <li><a href="#">Linha Festas</a></li>
+                          <li><a href="#">Linha Fantasia</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- Fim do menu -->
+              <div class="header-item item-right">
+                <div class="search-box">
+                  <input
+                    type="text"
+                    class="search-text"
+                    placeholder="Pesquisar..."
+                  />
+                  <a href="#"><i class='bx bxs-search bx-sm icon-search' ></i></a>
+                </div>
+    
+                <a class="navbar-icon" href="./components/cart.html"
+                ><i class='bx bxs-shopping-bag bx-sm tooltip'><span class="tooltiptext">Minha sacola</span></i></a>
+                <a href="#"><i class='bx bxs-user bx-sm tooltip' > <span class="tooltiptext">Minha conta</span></i></a>
+                <!-- menu mobile -->
+                <div class="mobile-menu-trigger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
 
     <!-- PRODUCT -->
     <section class="product__container">
       <div class="image__slider">
-        <div class="product__images">
+        <div class="single__product">
           <img
-            src="../assets/img/product/28326_000101.jpg"
+            src="../assets/img/product/28190_182043.jpg"
+            alt=""
+            class="product__image"
+            id="productImg"
+          />
+        </div>
+        <div class="product__images_row">
+          <div class="small__img_col">
+            <img
+            src="../assets/img/product/28224_151816.jpg"
             alt=""
             class="product__img active"
           />
-          <img
-            src="../assets/img/28326_000101_1.jpg"
-            alt=""
-            class="product__img"
-          />
-          <img src="./img/product image 3.png" alt="" class="product-img" />
-          <img src="./img/product image 4.png" alt="" class="product-img" />
+          </div>
+          <div class="small__img_col">
+            <img
+              src="../assets/img/product/28190_182043.jpg"
+              alt=""
+              class="product__img"
+            />
+          </div>
+          <div class="small__img_col">
+            <img
+              src="../assets/img/product/28224_151816.jpg"
+              alt=""
+              class="product__img"
+            />
+          </div>
+          <div class="small__img_col">
+            <img src="../assets/img/product/28337_132006.jpg" alt="" class="product__img" />
+          </div>
+          <div class="small__img_col">
+
+            <img src="../assets/img/product/28224_151816.jpg" alt="" class="product__img" />
+          </div>
+          
         </div>
+        
       </div>
       <div class="details">
+        <p>menina / camiseta</p>
         <h2 class="product__brand">
           Conjunto Be Nice Floral Vermelho - Quimby
         </h2>
-        <p class="product__description">
-          Conjunto Be Nice Floral Vermelho - Quimby Composto por 02 peças. Blusa
-          Regata. Short Cotton. Conjunto para menina confortável, ideal para os
-          dias mais quentes.
-        </p>
         <span class="product__price">R$34,95</span>
         <span class="product__actual_price">R$69.90</span>
-        <span class="product__discount">( 50% Off )</span>
-
+        <span class="product__discount">(50% Off)</span>
+        
         <p class="product__sub_heading">Tamanho</p>
-
+        
         <input type="radio" name="size" value="p" checked hidden id="p-size" />
         <label for="p-size" class="size__radio_btn check">P</label>
         <input type="radio" name="size" value="m" hidden id="m-size" />
@@ -61,90 +285,124 @@
           <p class="product__sub_heading">Quantidade</p>
           <input type="number" class="product-qtd"/>
           <button class="button cart__btn">Comprar</button>
-          <!-- <button class="button-outline wish__btn">
-            Adicionar à lista de desejos
-          </button> -->
-          </div>
-          <div>
-          
-          </div>
+        </div>
+        <p class="product__description">
+          Conjunto Be Nice Floral Vermelho - Quimby Composto por 02 peças. Blusa
+          Regata. Short Cotton. Conjunto para menina confortável, ideal para os
+          dias mais quentes.
+        </p>
+      
         </div>
       </div>
     </section>
 
-    <section class="description bd-grid">
+    <section class="description__container description bd-grid">
       <h2 class="heading">Descrição</h2>
-      <p class="description__text">
-        Conjunto Be Nice Floral Vermelho - Quimby
+      <div class="description__text">
+        <p>Conjunto Be Nice Floral Vermelho - Quimby</p>
+        <h3>Detalhes:</h3>
+        <ul>
+          <li><i class='bx bx-chevron-right'></i>01 blusa regata.</li>
+          <li><i class='bx bx-chevron-right'></i>Gola arredondada.</li>
+          <li><i class='bx bx-chevron-right'></i>Estampa com aplicação de strass.</li>
+          <li><i class='bx bx-chevron-right'></i>01 short em cotton, elástico na cintura.</li>
+          <li><i class='bx bx-chevron-right'></i>Short com estampa floral e amarração na cintura.</li>
+          <li><i class='bx bx-chevron-right'></i>Modelagem: Justa.</li>
+        </ul>
+        
+        <h3>Composição:</h3>
+        <ul>
+          <li><i class='bx bx-chevron-right'></i>Blusa: 100% Algodão</li>
+          <li><i class='bx bx-chevron-right'></i>Short: 94% Algodão / 06% Elastano</li>
+        </ul>
 
-
-Contém:
-01 blusa regata.
-Gola arredondada.
-Estampa com aplicação de strass.
-01 short em cotton, elástico na cintura.
-Short com estampa floral e amarração na cintura.
-Modelagem: Justa.
-
-
-Composição:
-Blusa: 100% Algodão
-Short: 94% Algodão / 06% Elastano
-      </p>
+        <h3>Cor:</h3>
+        <p><i class='bx bx-chevron-right'></i>Conjunto Be Nice Floral Vermelho</p>
+           
+    </div>
     </section>
 
-    <section class="description bd-grid">
-      <h2 class="heading">Informações Técnicas</h2>
-
-      <table>
-
-      </table>
-      <h4>Cor</h4>
-      <p class="description__text">
-        Conjunto Be Nice Floral Vermelho - Quimby
-
-
-      </p>
-    </section>
-
-    <!-- CARDS-CONTAINER -->
-    <section class="product" id="product">
-      <h2 class="product__category bd-grid">
-        Você pode se interessar por estes produtos também.
-      </h2>
-      <button class="pre__btn">
-        <img src="../assets/img/arrow.png" alt="" />
-      </button>
-      <button class="nxt__btn">
-        <img src="../assets/img/arrow.png" alt="" />
-      </button>
+    <footer>
+      <div class="footer__container bd-grid">
+        <div class="footer_box">
+          <img
+            src="../assets/img/logo.png"
+            class="nav__logo"
+            alt="logo bubalão"
+          />
+          <p class="footer__description">Nova coleção de 2022.</p>
+          <div class="footer__social">
+            <a href="" class="footer__social_item"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="" class="footer__social_item"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="" class="footer__social_item"><i class="bx bxl-twitter"></i></a>
+            <a href="" class="footer__social_item"
+              ><i class="bx bxl-pinterest"></i
+            ></a>
+          </div>
+        </div>
       
-      <div class="container__product"></div>
-    </section>
-
-    <!-- CARDS-CONTAINER -->
-    <section class="product" id="product">
-      <h2 class="product__category bd-grid">
-        Produtos mais vendidos
-      </h2>
-      <button class="pre__btn">
-        <img src="../assets/img/arrow.png" alt="" />
-      </button>
-      <button class="nxt__btn">
-        <img src="../assets/img/arrow.png" alt="" />
-      </button>
+        <div class="footer_box">
+          <h3 class="footer__title">Explorar</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Quem somos</a></li>
+            <li><a href="#" class="footer__link">Termos e Condições</a></li>
+            <li>
+              <a href="#" class="footer__link">Política de privacidade</a>
+            </li>
+            <li><a href="#" class="footer__link">Política de entrega</a></li>
+            <li>
+              <a href="#" class="footer__link">Trocas e devoluções</a>
+            </li>
+          </ul>
+        </div>
       
-      <div class="container__product"></div>
-    </section>
+        <div class="footer_box">
+          <h3 class="footer__title">Suporte</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Como comprar</a></li>
+            <li><a href="#" class="footer__link">Perguntas frequentes</a></li>
+            <li><a href="#" class="footer__link">Guia de medidas</a></li>
+            <li><a href="#" class="footer__link">Formas de pagamento</a></li>
+            <li>
+              <a href="#" class="footer__link">Atendimento ao cliente</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Minha conta</a>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="footer_box">
+          <h3 class="footer__title">Fale conosco</h3>
+          <ul>
+            <li></li>
+              <a href="#" class="footer__link"
+                ><i class="bx bxl-whatsapp"></i> (11) 3907-9688</a
+              >
+            </li>
+            <li><a href="#" class="footer__link"> <i class='bx bx-envelope' ></i> contato@bubalao.com.br</a></li>
+          </ul>
+      
+          <div>
+            <h3 class="footer__title">Pagamento</h3>
+            <img src="../assets/img/bubalao-bandeiras-de-pagamento.png" alt="imagem dos cartões aceitos">
+            <img src="../assets/img/site-seguro.png" alt="imagem site seguro">
+          </div>
+        </div>
+      </div>
+      
+      <p class="footer__copy">
+        &#169; 2021 Bubalão - CNPJ 018.733.088/0001-16 | Todos os direitos reservados
+      </p>
+    </footer>
 
-    <!-- FOOTER -->
-    <footer class="footer section"></footer>
+   
     <!-- SCRIPTS -->
     <script src="../assets/js/navbar.js"></script>
-    
-    <script src="../assets/js/footer.js"></script>
-    <!-- <script src="../assets/js/home.js"></script> -->
     <script src="../assets/js/product.js"></script>
-    <script src="../assets/js/carousel.js"></script>
   </body>
 </html>
