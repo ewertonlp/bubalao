@@ -47,6 +47,10 @@ img {
   display: block;
 }
 
+.img-medidas {
+  margin: 4rem 0;
+}
+
 .section {
   padding: 5rem 0 2rem;
 }
@@ -68,6 +72,17 @@ img {
   right: 0;
   margin: auto;
   background-color: var(--dark-grey);
+}
+
+.container {
+  max-width: 1024px;
+  position: relative;
+  margin: 5rem auto;
+}
+
+.icon {
+  color: var(--light-pink);
+  margin-right: 1rem;
 }
 
 /* LAYOUT */
@@ -249,7 +264,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin: 4rem 2rem;
 }
 
@@ -257,13 +272,13 @@ img {
   color: var(--dark-pink);
 }
 
-.info-title,
-.info-text {
-  margin-bottom: 2rem;
-  color: var(--dark-grey);
+.info-title {
+  margin: 2rem 0;
 }
 
 .info-text {
+  margin-bottom: 1.5rem;
+  color: var(--dark-grey);
   line-height: 1.5rem;
   font-size: var(--regular-font-size);
 }

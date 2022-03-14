@@ -11,7 +11,8 @@
 }
 
 .image__slider {
-  width: 700px;
+  max-width: 650px;
+  width: 100%;
   height: 500px;
   position: relative;
   background-color: var(--white-color);
@@ -41,7 +42,6 @@
 
 .single__product img {
   max-height: 480px;
-  padding: 0;
 }
 
 .product__images {
